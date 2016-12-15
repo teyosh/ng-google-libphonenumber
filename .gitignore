@@ -1,0 +1,31 @@
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+/node_modules
+npm-debug.log
+
+# type script artifacts
+/typings
+
+# WebStorm
+.idea
+.vscode
+
+# ignore build and dist for now
+/bundles
+/demo-build
+/dist
+/coverage
+/ts
+/doc
+
+# ignore inline compiling
+/src/*.js
+/src/*.js.map
+/src/*.d.ts
+*.js
+*.js.map
+*.d.ts
+
+factories
+
+/**/*.metadata.json
