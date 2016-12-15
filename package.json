@@ -1,10 +1,24 @@
 {
   "name": "ng-google-libphonenumber",
   "version": "0.0.1",
-  "description": "A wrapper service for google-libphonenumber.",
-  "main": "ng-google-libphonenumber.js",
-  "author": "Tessei Yoshida <yosh256@gmail.com>",
+  "description": "Google libphonenumber for Angular.",
+  "main": "bundles/ng-google-libphonenumber.umd.js",
+  "module": "index.js",
+  "typings": "index.d.ts", 
+  "author": "Tessei Yoshida",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/teyosh/ng-google-libphonenumber.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "libphonenumber",
+    "phone",
+    "tel"
+  ],  
+  "homepage": "https://github.com/teyosh/ng-google-libphonenumber",
   "scripts": {
     "test": "karma start",
     "test-watch": "karma start --singleRun=false --autoWatch=true",
@@ -54,5 +68,10 @@
     "typescript": "^2.0.10",
     "webpack": "2.1.0-beta.27",
     "zone.js": "^0.7.2"
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }  
 }
