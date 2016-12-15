@@ -1,31 +1,51 @@
-# Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-/node_modules
+#################
+## Misc
+#################
+**/.DS_Store
+nbproject
+manifest.mf
+build.xml
+node_modules/*
 npm-debug.log
+*.js
+!config/*
+!karma.conf.js
+!webpack.config.js
+*.map
+*.d.ts
+!make.js
+!examples/**/*.js
+coverage
+*.metadata.json
+bundles
 
-# type script artifacts
-/typings
-
-# WebStorm
-.idea
+#######################
+## Visual Studio Code
+#######################
 .vscode
 
-# ignore build and dist for now
-/bundles
-/demo-build
-/dist
-/coverage
-/ts
-/doc
 
-# ignore inline compiling
-/src/*.js
-/src/*.js.map
-/src/*.d.ts
-*.js
-*.js.map
-*.d.ts
+#################
+## JetBrains
+#################
+.idea
+.project
+.settings
 
-factories
+############
+## Windows
+############
 
-/**/*.metadata.json
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Mac crap
+.DS_Store
+
