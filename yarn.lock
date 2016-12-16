@@ -2434,6 +2434,10 @@ nerf-dart@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/nerf-dart/-/nerf-dart-1.0.0.tgz#e6dab7febf5ad816ea81cf5c629c5a0ebde72c1a"
 
+ng-google-libphonenumber:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ng-google-libphonenumber/-/ng-google-libphonenumber-0.0.2.tgz#83089b930144a881587ea11b0db0fb44b2f15abe"
+
 node-libs-browser@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/node-libs-browser/-/node-libs-browser-1.1.1.tgz#2a38243abedd7dffcd07a97c9aca5668975a6fea"
