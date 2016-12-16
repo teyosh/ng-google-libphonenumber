@@ -1,6 +1,6 @@
 {
   "name": "ng-google-libphonenumber",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Google libphonenumber for Angular.",
   "main": "bundles/ng-google-libphonenumber.umd.js",
   "module": "index.js",
