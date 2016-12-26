@@ -22,10 +22,10 @@
     "node_modules", "bundles", "dist"
   ],
   "files": [
+    "index.ts",
+    "google-libphonenumber.ts",
     "./src/google-libphonenumber.service.ts",
-    "./src/google-libphonenumber.module.ts",
-    "./tests/google-libphonenumber.spec.ts",
-    "./google-libphonenumber.ts"
+    "./tests/google-libphonenumber.spec.ts"
   ],
   "atom": { "rewriteTsconfig": false }
 }

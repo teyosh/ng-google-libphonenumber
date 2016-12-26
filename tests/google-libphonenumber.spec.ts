@@ -2,7 +2,7 @@
 
 import { inject, TestBed, getTestBed } from '@angular/core/testing';
 import {Injector} from "@angular/core";
-import { GoogleLibphonenumberModule, GoogleLibphonenumberService } from '../src/google-libphonenumber.module';
+import { GoogleLibphonenumberModule, GoogleLibphonenumberService } from '../index';
 
 
 describe('GoogleLibphonenumberService', () => {

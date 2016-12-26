@@ -1,1 +1,1 @@
-export * from "./src/google-libphonenumber.module";
+export * from "./index";
