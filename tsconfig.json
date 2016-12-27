@@ -5,13 +5,9 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "sourceMap": true,
-    "noEmitHelpers": true,
     "noImplicitAny": true,
-    "declaration": false,
-    "skipLibCheck": true,
-    "stripInternal": true,
-    "lib": ["dom", "es6"],
+    "declaration": true,
+    "lib": ["es2015", "dom"],
     "types": [
       "jasmine",
       "node",
@@ -27,5 +23,8 @@
     "./src/google-libphonenumber.service.ts",
     "./tests/google-libphonenumber.spec.ts"
   ],
-  "atom": { "rewriteTsconfig": false }
+  "angularCompilerOptions": {
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
+  }
 }
