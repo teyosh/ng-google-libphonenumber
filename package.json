@@ -22,27 +22,26 @@
   "scripts": {
     "test": "karma start",
     "test-watch": "karma start --singleRun=false --autoWatch=true",
-    "commit": "npm run prepublish && npm test && git-cz",
-    "prepublish": "ngc && npm run build",
+    "commit": "npm run prepare && npm test && git-cz",
+    "prepare": "ngc && npm run build",
     "build": "webpack && cp bundles/ng-google-libphonenumber.umd.js bundles/index.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "peerDependencies": {
-    "@angular/core": "^2.0.0"
+    "@angular/core": "5.2.9"
   },
   "devDependencies": {
-    "@angular/common": "^2.3.1",
-    "@angular/compiler": "^2.3.1",
-    "@angular/compiler-cli": "^2.3.1",
-    "@angular/core": "^2.3.1",
-    "@angular/platform-browser": "^2.3.1",
-    "@angular/platform-browser-dynamic": "^2.3.1",
-    "@angular/router": "^3.3.1",
+    "@angular/common": "5.2.9",
+    "@angular/compiler": "5.2.9",
+    "@angular/compiler-cli": "5.2.9",
+    "@angular/core": "5.2.9",
+    "@angular/platform-browser": "5.2.9",
+    "@angular/platform-browser-dynamic": "5.2.9",
+    "@angular/router": "5.2.9",
     "@types/google-libphonenumber": "^7.4.10",
-    "@types/jasmine": "^2.5.38",
+    "@types/jasmine": "^2.8.6",
     "@types/node": "^6.0.52",
     "@types/webpack": "^2.0.0",
-    "awesome-typescript-loader": "^3.0.0-beta.17",
     "codelyzer": "^2.0.0-beta.3",
     "commitizen": "^2.8.7",
     "cz-conventional-changelog": "^1.2.0",
@@ -59,20 +58,28 @@
     "karma-webpack": "^1.8.0",
     "ng-google-libphonenumber": "^0.0.2",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.1",
+    "rxjs": "^5.5.8",
     "semantic-release": "^6.3.2",
     "should": "^11.1.2",
     "source-map-loader": "^0.1.5",
     "ts-helpers": "^1.1.2",
     "tslint": "^4.0.2",
     "tslint-loader": "^3.3.0",
-    "typescript": "^2.0.10",
-    "webpack": "2.1.0-beta.27",
-    "zone.js": "^0.7.2"
+    "typescript": "2.6.2",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "zone.js": "^0.8.26"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "@angular/cli": "1.7.4",
+    "@semantic-release/npm": "^3.2.4",
+    "rxjs": "^5.5.8",
+    "ts-loader": "^4.2.0",
+    "types": "^0.1.1"
   }
 }

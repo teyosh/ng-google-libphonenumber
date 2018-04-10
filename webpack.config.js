@@ -1,18 +1,15 @@
-/**
- * Adapted from angular2-webpack-starter
- */
+// Adapted from angular2-webpack-starter
 
 const helpers = require('./config/helpers'),
     webpack = require('webpack');
 
-/**
- * Webpack Plugins
- */
+// Webpack Plugins
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 module.exports = {
+    mode: 'none',
     devtool: 'inline-source-map',
 
     resolve: {
@@ -40,7 +37,7 @@ module.exports = {
             exclude: [helpers.root('node_modules')]
         }, {
             test: /\.ts$/,
-            loader: 'awesome-typescript-loader?declaration=false',
+            loader: 'ts-loader',
             exclude: [/\.e2e\.ts$/]
         }]
     },
